@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+
+    .child1 {
+      top: 50px;
+      left: 50px;
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+    }
+
+
+    .child2 {
+      position: absolute;
+      left: 150px;
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .child3 {
+      position: absolute;
+      top: 0px;
+      left: 150px;
+      width: 150px;
+      height: 150px;
+      background-color: greenyellow;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .child4 {
+      top: 150px;
+      left: 0px;
+      position: absolute;
+      width: 150px;
+      z-index: 0;
+      height: 150px;
+      background-color: orchid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width:700PX) {
+      .child1 {
+        height: 300px;
+      }
+
+      .child4 {
+        display: none;
+      }
+
+      .child2 {
+        display: none;
+      }
+
+      .child3 {
+        height: 300px;
+      }
+
+    }
+
+
+    .parent {
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+    <div class="child4">4</div>
+  </div>
+</body>
+
+</html>
