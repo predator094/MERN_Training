@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <p class="io">hello world 1</p>
+    <p class="io">hello world 2</p>
+    <p class="io">hello world 3</p>
+    <p class="io">hello world 4</p>
+    <p class="io">hello world 5</p>
+    <button id="cl">color change</button>
+    <button id="dn">hide & show</button>
+
+    <script>
+
+
+        const io = document.querySelectorAll(".io");
+        const cl = document.querySelector("#cl");
+        const dn = document.querySelector("#dn");
+        cl.addEventListener("click", () => {
+            io.forEach((element) => {
+                element.style.color = "red";
+            });
+        });
+        dn.addEventListener("click", () => {
+            io.forEach((element) => {
+                if (element.style.display == "none") {
+                    element.style.display = "block";
+                    dn.innerHTML = "hide";
+                } else {
+                    element.style.display = "none";
+                    dn.innerHTML = "show";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
