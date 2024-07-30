@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CAll</title>
+</head>
+
+<body>
+    </h1>API Call</h1>
+    <p id="op"></p>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        let op = document.getElementById('op');
+        fetch('http://localhost:9000/data')
+            .then(response => response.json())
+            .then(data => {
+                let iu = data.message;
+                op.innerHTML = iu;
+            })
+            .catch(error => console.error(error))   
+    </script>
+</body>
+
+</html>
