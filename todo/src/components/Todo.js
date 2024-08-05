@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Counter = () => {
+const Todo = () => {
 	const [list, setList] = useState([]);
 	const [task, setTask] = useState("");
 
@@ -30,4 +30,4 @@ const Counter = () => {
 	);
 };
 
-export default Counter;
+export default Todo;
