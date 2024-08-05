@@ -1,0 +1,44 @@
+/* App.css */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header,
+footer {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  flex-shrink: 0;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+nav {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.main-content {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1;
+  overflow-y: auto;
+}
