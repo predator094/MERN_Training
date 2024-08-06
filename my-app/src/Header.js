@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "./Navbar";
 
-const Header = () => {
-	return <header>Header</header>;
+const Header = (props) => {
+	return (
+		<header>
+			Header
+			<Navbar />
+		</header>
+	);
 };
 
 export default Header;

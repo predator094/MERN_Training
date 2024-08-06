@@ -4,6 +4,7 @@ import Counter from "./components/Counter";
 import Bg from "./components/Bg";
 import Games from "./components/Games";
 import { useState } from "react";
+import Sample from "./components/Sample";
 import "./App.css";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
 	return (
 		<div>
 			<Bg />
+			<Sample />
 		</div>
 	);
 };
