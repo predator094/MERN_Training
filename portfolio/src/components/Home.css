@@ -1,0 +1,25 @@
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8f0;
+    padding: 2rem;
+    transition: background-color 0.5s ease;
+}
+
+.home-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.home-section:hover {
+    background-color: #cbd5e0;
+}

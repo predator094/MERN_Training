@@ -1,13 +1,8 @@
 import React from "react";
 import "./App.css";
-import Footer from "./Footer";
+
 const Body = () => {
-	return (
-		<main className="main-content">
-			Body
-			<Footer />
-		</main>
-	);
+	return <main className="main-content">Body</main>;
 };
 
 export default Body;
